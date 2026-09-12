@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Minha - Loja</title>
 </head>
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <h1 class="navbar-brand">Minha Loja</h1>
 
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
+
                 <div class="collapse navbar-collapse" id="menu">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
@@ -34,33 +37,62 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Bem-vindo à Minha loja! </h2>
-            <p>Os melhores produtos com os melhores preços.</p>   
+        <section class="bg-secondary text-white text-center py-5">
+            <div class="container">
+                <h2 class="display-5 fw-bold">Minha Loja</h2>
+                <p class="lead">Os melhores produtos com os melhores preços.</p>
+            </div>
         </section>
-        <section id="produtos">
-            <h2>Nossos Produtos</h2> 
-            <article>
-                <img src="https://lojasmel1.vtexassets.com/arquivos/ids/200758/Barra_de_Chocolate_Branco_80g_2201001829_-_Neugebauer_0.jpg?v=638288444535830000" alt="Chocolate Branco" width="200">
-                <h3>Chocolate Branco</h3>
-                <p>O melhor chocolate.</p>
-                <span>R$ 8,99</span>
-                <button>Comprar</button>
-            </article>
-            <article>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlMyijHbWHoNIM0gCFjOn2q1rmLMKF8xffRBWyUmFSeA&s=10" alt="Diamante Negro" width="200">
-                <h3>Diamante Negro</h3>
-                <p>O melhor diamante negro da cidade.</p>
-                <span>R$ 10,00</span>
-                <button>Comprar</button>
-            </article>
-            <article>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSC0d3tTyBx1PkD2KEn4eROWAkbOdtCL0hhB5Tabsa9w&s=10" alt="Oreo" width="200">
-                <h3>Oreo</h3>
-                <p>Venha se deliciar com oreo</p>
-                <span>R$ 9,00</span>
-                <button>Comprar</button>
-            </article>
+        <section id="produtos" class="container my-5">
+            <h2 class="text-center mb-4">Nossos Produtos</h2>
+
+            <!--Altura = height-->
+            <!--Largura = widht-->
+            <!--Cima =  Top    -->
+            <!--Baixo = Bottom -->
+            <!--Direita = right-->
+            <!--Esquerda = left-->
+            <div class="row g-2">
+                <div class="card col-12 col-md-6 col-lg-4 col-xl-3">
+                    <img src="https://lojasmel1.vtexassets.com/arquivos/ids/200758/Barra_de_Chocolate_Branco_80g_2201001829_-_Neugebauer_0.jpg?v=638288444535830000"
+                        class="card-img-top" alt="Chocolate Branco">
+                    <div class="card-body">
+                        <h5 class="card-title">Chocolate Branco</h5>
+                        <p class="card-text">O melhor chocolate.</p>
+                        <div class="d-flex justify-content-between">
+                            <span class="fw-bold fs-5 text-success pr-5">R$ 8,99</span>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card col-12 col-md-6 col-lg-4 col-xl-3">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlMyijHbWHoNIM0gCFjOn2q1rmLMKF8xffRBWyUmFSeA&s=10"
+                        class="card-img-top" alt="Diamante Negro">
+                    <div class="card-body">
+                        <h5 class="card-title">Diamante Negro</h5>
+                        <p class="card-text">O melhor diamante negro da cidade.</p>
+                        <div class="d-flex justify-content-between">
+                            <span class="fw-bold fs-5 text-success pr-5">R$ 10,00</span>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card col-12 col-md-6 col-lg-4 col-xl-3">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSC0d3tTyBx1PkD2KEn4eROWAkbOdtCL0hhB5Tabsa9w&s=10"
+                        class="card-img-top" alt="Oreo">
+                    <div class="card-body">
+                        <h5 class="card-title">Oreo</h5>
+                        <p class="card-text">Venha se deliciar com oreo</p>
+                        <div class="d-flex justify-content-between">
+                            <span class="fw-bold fs-5 text-success pr-5">R$ 9,00</span>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
         <section id="sobre">
             <h2>Sobre Nós</h2>
@@ -112,13 +144,9 @@
                 </div>
                 <div>
                     <label for="mensagem">Mensagem:</label>
-                    <textarea
-                        id="mensagem"
-                        cols="30" rows="10"
-                        placeholder="Digite sua Mensagem"
-                    ></textarea>
+                    <textarea id="mensagem" cols="30" rows="10" placeholder="Digite sua Mensagem"></textarea>
                 </div>
-                <button >Enviar</button>
+                <button>Enviar</button>
             </form>
         </section>
     </main>
@@ -127,6 +155,9 @@
         <p>&copy; 2026 Feito com amor por Nickson</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
